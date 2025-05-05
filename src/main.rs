@@ -46,6 +46,19 @@ pub fn main() {
     if os == "mac" {
         de = "MacOS Desktop Enviroment";
     }
+
+    // Print
+    if _mac == true {
+        println!("{} {}",
+        macartln1, os
+        );
+        println!("{}",
+        macartln2
+        );
+        println!("{} {}",
+        macartln3, de
+        );
+    }
 }
 
 fn exit() {

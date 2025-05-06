@@ -83,6 +83,16 @@ pub fn main() {
             println!("{} {}",
             ubuntuln3, de
             );
+        } else if _linux == true {
+            println!("{} {}",
+            linuxln1, os
+            );
+            println!("{}",
+            linuxln2
+            );
+            println!("{} {}",
+            linuxln3, de
+            );
         }
     }
 }

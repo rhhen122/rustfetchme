@@ -1,7 +1,7 @@
 
 pub fn main() {
-    let mut os = "mac"; // Set a OS
-    let subsys = ""; // Only for linux
+    let mut os = "linux"; // Set a OS
+    let subsys = "mint"; // Only for linux
     let mut de = ""; // A Desktop Enviroment
     let art = ""; // Overides Art
 
@@ -30,6 +30,10 @@ pub fn main() {
     let ubuntuln2 = "    O";
     let ubuntuln3 = "0--' ";
 
+    let mintln1 = "";
+    let mintln2 = "";
+    let mintln3 = "";
+
     if art != "" {
         if art == "mac" {_mac = true;}
         if art == "linux" {_linux = true;}
@@ -40,6 +44,7 @@ pub fn main() {
     }
 
     if os == "linux" {
+        _linux = true;
         if subsys == "arch" {_arch = true; os = "Arch Linux";}
         if subsys == "ubuntu" {_ubuntu = true; os = "Ubuntu Linux"}
         if subsys == "mint" {_mint = true; os = "Linux Mint"}
@@ -47,6 +52,8 @@ pub fn main() {
     }
 
     if os == "mac" {
+        _mac = true;
+        os = "MacOS";
         de = "MacOS Desktop Enviroment";
     }
 
@@ -82,6 +89,10 @@ pub fn main() {
             );
             println!("{} {}",
             ubuntuln3, de
+            );
+        } else if _mint == true {
+            println!("{} {}",
+            mintln1, os
             );
         } else if _linux == true {
             println!("{} {}",

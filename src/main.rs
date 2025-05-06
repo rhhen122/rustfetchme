@@ -1,7 +1,7 @@
 use colored::{ColoredString, Colorize};
 pub fn main() {
-    let mut os = "mac"; // Set a OS
-    let subsys = "mint"; // Only for linux
+    let mut os = "linux"; // Set a OS
+    let subsys = ""; // Only for linux
     let mut de = ""; // A Desktop Enviroment
     let art = ""; // Overides Art
 
@@ -18,9 +18,9 @@ pub fn main() {
     let macartln2 = "| M |".yellow();
     let macartln3: ColoredString = "\\___/".green();
 
-    let linuxln1 = "/   \\";
-    let linuxln2 = "\\___/";
-    let linuxln3 = "/ L \\";
+    let linuxln1 = "/   \\".truecolor(128, 128, 128);
+    let linuxln2 = "\\___/".truecolor(128, 128, 128);
+    let linuxln3 = "/ L \\".truecolor(128, 128, 128);
 
     let archln1 = "  / \\";
     let archln2 = " /  \\";

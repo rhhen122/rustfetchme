@@ -63,6 +63,12 @@ pub fn main() {
             println!("{} {}",
             archln1, os
             );
+            println!("{}",
+            archln2
+            );
+            println!("{} {}",
+            archln3, de
+            );
         }
     }
 }

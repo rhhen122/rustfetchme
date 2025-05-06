@@ -1,6 +1,6 @@
-
+use colored::{ColoredString, Colorize};
 pub fn main() {
-    let mut os = "linux"; // Set a OS
+    let mut os = "mac"; // Set a OS
     let subsys = "mint"; // Only for linux
     let mut de = ""; // A Desktop Enviroment
     let art = ""; // Overides Art
@@ -14,9 +14,9 @@ pub fn main() {
     let mut _mac = false;
     let mut _linux = false;
 
-    let macartln1 = "/   \\";
-    let macartln2 = "| M |";
-    let macartln3: &'static str = "\\___/";
+    let macartln1 = "/   \\".red();
+    let macartln2 = "| M |".yellow();
+    let macartln3: ColoredString = "\\___/".green();
 
     let linuxln1 = "/   \\";
     let linuxln2 = "\\___/";
@@ -30,9 +30,9 @@ pub fn main() {
     let ubuntuln2 = "    O";
     let ubuntuln3 = "0--' ";
 
-    let mintln1 = "";
-    let mintln2 = "";
-    let mintln3 = "";
+    let mintln1 = "/ M ,";
+    let mintln2 = "\\___/";
+    let mintln3 = "/";
 
     if art != "" {
         if art == "mac" {_mac = true;}
@@ -93,6 +93,12 @@ pub fn main() {
         } else if _mint == true {
             println!("{} {}",
             mintln1, os
+            );
+            println!("{}",
+            mintln2
+            );
+            println!("{} {}",
+            mintln3, de
             );
         } else if _linux == true {
             println!("{} {}",

@@ -7,24 +7,19 @@ pub fn main() {
 
     // ART
     let mut _mac = false;
+    let mut _linux = false;
 
-    let mut macartln1 = "";
-    let mut macartln2 = "";
-    let mut macartln3: &'static str = "";
-    let mut linuxln1 = "";
-    let mut linuxln2 = "";
-    let mut linuxln3 = "";
+    let macartln1 = "/   \\";
+    let macartln2 = "| M |";
+    let macartln3: &'static str = "\\___/";
 
-    macartln1 = "     ";
-    macartln2 = "     ";
-    macartln3 = "     ";
-
-    linuxln1 = "     ";
-    linuxln2 = "     ";
-    linuxln3 = "     ";
+    let linuxln1 = "/   \\";
+    let linuxln2 = "\\___/";
+    let linuxln3 = "/ L \\";
 
     if art != "" {
         if art == "mac" {_mac = true;}
+        if art == "linux" {_linux = true;}
     }
 
     if os == "" {
@@ -58,6 +53,9 @@ pub fn main() {
         println!("{} {}",
         macartln3, de
         );
+    }
+    if _linux == true {
+        
     }
 }
 

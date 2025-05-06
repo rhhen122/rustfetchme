@@ -26,6 +26,10 @@ pub fn main() {
     let archln2 = " /  \\";
     let archln3 = "/   \\";
 
+    let ubuntuln1 = "o__, ";
+    let ubuntuln2 = "    O";
+    let ubuntuln3 = "0--' ";
+
     if art != "" {
         if art == "mac" {_mac = true;}
         if art == "linux" {_linux = true;}
@@ -37,9 +41,9 @@ pub fn main() {
 
     if os == "linux" {
         if subsys == "arch" {_arch = true; os = "Arch Linux";}
-        if subsys == "ubuntu" {_ubuntu = true;}
-        if subsys == "mint" {_mint = true;}
-        if subsys == "" {_linux = true;}
+        if subsys == "ubuntu" {_ubuntu = true; os = "Ubuntu Linux"}
+        if subsys == "mint" {_mint = true; os = "Linux Mint"}
+        if subsys == "" {_linux = true; os = "Linux"}
     }
 
     if os == "mac" {
@@ -68,6 +72,16 @@ pub fn main() {
             );
             println!("{} {}",
             archln3, de
+            );
+        } else if _ubuntu == true {
+            println!("{} {}",
+            ubuntuln1, os
+            );
+            println!("{}",
+            ubuntuln2
+            );
+            println!("{} {}",
+            ubuntuln3, de
             );
         }
     }

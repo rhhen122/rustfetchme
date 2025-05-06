@@ -1,9 +1,8 @@
 use colored::{ColoredString, Colorize};
 pub fn main() {
     let mut os = "linux"; // Set a OS
-    let subsys = ""; // Only for linux
-    let mut de = ""; // A Desktop Enviroment
-    let art = ""; // Overides Art
+    let subsys = "ubuntu"; // Only for linux
+    let mut de = "KDE Plasma 9"; // A Desktop Enviroment
 
     let mut _arch = false;
     let mut _ubuntu: bool = false;
@@ -22,22 +21,17 @@ pub fn main() {
     let linuxln2 = "\\___/".truecolor(128, 128, 128);
     let linuxln3 = "/ L \\".truecolor(128, 128, 128);
 
-    let archln1 = "  / \\";
-    let archln2 = " /  \\";
-    let archln3 = "/   \\";
+    let archln1 = "  ,   ".cyan();
+    let archln2 = " / \\ ".cyan();
+    let archln3 = "/   \\".cyan();
 
-    let ubuntuln1 = "o__, ";
-    let ubuntuln2 = "    O";
-    let ubuntuln3 = "0--' ";
+    let ubuntuln1 = "o__, ".truecolor(221, 72, 20);
+    let ubuntuln2 = "    O".truecolor(221, 72, 20);
+    let ubuntuln3 = "0--' ".truecolor(221, 72, 20);
 
-    let mintln1 = "/ M ,";
-    let mintln2 = "\\___/";
-    let mintln3 = "/";
-
-    if art != "" {
-        if art == "mac" {_mac = true;}
-        if art == "linux" {_linux = true;}
-    }
+    let mintln1 = "/ M ,".green();
+    let mintln2 = "\\___/".green();
+    let mintln3 = "/".green();
 
     if os == "" {
         exit();

@@ -49,10 +49,12 @@ cargo install --path .
 ```zsh
 # MacOS ZSH
 cat "/Users/YourUserHere/.cargo/bin" | cat ~/.zshrc -
+cargo install --path .
 ```
 ```bash
 # MacOS BASH
 cat "/Users/YourUserHere/.cargo/bin" | cat ~/.bashrc -
+cargo install --path .
 ```
 
 ###

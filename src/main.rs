@@ -1,13 +1,28 @@
 use colored::{ColoredString, Colorize};
 fn main() {
-    let mut os: &'static str = "mac"; // Set a OS
-    let subsys: &'static str = ""; // Only for linux
-    let mut de: &'static str = ""; // A Desktop Enviroment
 
-    let mut _arch = false;
+
+
+
+    // CONFIG - Change the contents of the file here to determine what rustfetchme prints
+    let mut os: &'static str = "linux"; // Set a OS
+    let subsys: &'static str = "fedora"; // Only for linux
+    let mut de: &'static str = "KDE Plasma 9"; // A Desktop Enviroment
+
+
+
+
+
+
+
+
+
+
+    let mut _arch: bool = false;
     let mut _ubuntu: bool = false;
     let mut _mint: bool = false;
     let mut _linux: bool = false;
+    let mut _fedora: bool = false;
 
     // ART
     let mut _mac: bool = false;
@@ -29,9 +44,13 @@ fn main() {
     let ubuntuln2: ColoredString = "    O".truecolor(221, 72, 20);
     let ubuntuln3: ColoredString = "0--' ".truecolor(221, 72, 20);
 
-    let mintln1: ColoredString = "/ M ,".green();
+    let mintln1: ColoredString = "/ M , ".green();
     let mintln2: ColoredString = "\\___/".green();
-    let mintln3: ColoredString = "/".green();
+    let mintln3: ColoredString = "/     ".green();
+
+    let fedoraln1: ColoredString = "  .* ".blue();
+    let fedoraln2: ColoredString = " /  |".blue();
+    let fedoraln3: ColoredString = "-----".blue();
 
     if os == "" {
         exit();
@@ -42,6 +61,7 @@ fn main() {
         if subsys == "arch" {_arch = true; os = "Arch Linux";}
         if subsys == "ubuntu" {_ubuntu = true; os = "Ubuntu Linux"}
         if subsys == "mint" {_mint = true; os = "Linux Mint"}
+        if subsys == "fedora" {_fedora = true; os = "Fedora Linux"}
         if subsys == "" {_linux = true; os = "Linux"}
     }
 
@@ -93,6 +113,16 @@ fn main() {
             );
             println!("{} {}",
             mintln3, de
+            );
+        }  else if _fedora == true {
+            println!("{} {}",
+            fedoraln1, os
+            );
+            println!("{}",
+            fedoraln2
+            );
+            println!("{} {}",
+            fedoraln3, de
             );
         } else if _linux == true {
             println!("{} {}",

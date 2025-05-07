@@ -9,6 +9,9 @@
 
 Please have the latest version of `cargo` & `rustc` installed to your system
 
+First use maybe slow, this is because your system has to allocate memory to the program.
+it seems to be slower on first boot on `arm64` systems.
+
 ###
 Install
 

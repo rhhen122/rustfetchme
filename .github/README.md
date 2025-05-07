@@ -7,6 +7,8 @@
 <img src="image.png" height="30">
 </div>
 
+Please have the latest version of `cargo` & `rustc` installed to your system
+
 ###
 Install
 

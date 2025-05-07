@@ -17,6 +17,13 @@ git clone https://codeberg.org/rhhen122/rustfetchme.git
 ```
 
 ###
+Update
+
+```bash
+git pull origin master
+```
+
+###
 src/main.rs
 
 ```rust

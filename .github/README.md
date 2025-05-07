@@ -3,7 +3,9 @@
 <a href="https://codeberg.org/rhhen122/rustfetchme">CodeBerg</a>
 <a href="https://github.com/rhhen122/rustfetchme">GitHub</a>
 
-<img src="image.png" height="30" align="center">
+<div align="center">
+<img src="image.png" height="30">
+</div>
 
 ###
 Install

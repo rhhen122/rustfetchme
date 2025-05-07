@@ -1,8 +1,8 @@
 use colored::{ColoredString, Colorize};
-pub fn main() {
-    let mut os = "linux"; // Set a OS
-    let subsys = "ubuntu"; // Only for linux
-    let mut de = "KDE Plasma 9"; // A Desktop Enviroment
+fn main() {
+    let mut os: &'static str = "mac"; // Set a OS
+    let subsys: &'static str = ""; // Only for linux
+    let mut de: &'static str = ""; // A Desktop Enviroment
 
     let mut _arch = false;
     let mut _ubuntu: bool = false;
@@ -10,28 +10,28 @@ pub fn main() {
     let mut _linux: bool = false;
 
     // ART
-    let mut _mac = false;
-    let mut _linux = false;
+    let mut _mac: bool = false;
+    let mut _linux: bool = false;
 
-    let macartln1 = "/   \\".red();
-    let macartln2 = "| M |".yellow();
+    let macartln1: ColoredString = "/   \\".red();
+    let macartln2: ColoredString = "| M |".yellow();
     let macartln3: ColoredString = "\\___/".green();
 
-    let linuxln1 = "/   \\".truecolor(128, 128, 128);
-    let linuxln2 = "\\___/".truecolor(128, 128, 128);
-    let linuxln3 = "/ L \\".truecolor(128, 128, 128);
+    let linuxln1: ColoredString = "/   \\".truecolor(128, 128, 128);
+    let linuxln2: ColoredString = "\\___/".truecolor(128, 128, 128);
+    let linuxln3: ColoredString = "/ L \\".truecolor(128, 128, 128);
 
-    let archln1 = "  ,   ".cyan();
-    let archln2 = " / \\ ".cyan();
-    let archln3 = "/   \\".cyan();
+    let archln1: ColoredString = "  ,   ".cyan();
+    let archln2: ColoredString = " / \\ ".cyan();
+    let archln3: ColoredString = "/   \\".cyan();
 
-    let ubuntuln1 = "o__, ".truecolor(221, 72, 20);
-    let ubuntuln2 = "    O".truecolor(221, 72, 20);
-    let ubuntuln3 = "0--' ".truecolor(221, 72, 20);
+    let ubuntuln1: ColoredString = "o__, ".truecolor(221, 72, 20);
+    let ubuntuln2: ColoredString = "    O".truecolor(221, 72, 20);
+    let ubuntuln3: ColoredString = "0--' ".truecolor(221, 72, 20);
 
-    let mintln1 = "/ M ,".green();
-    let mintln2 = "\\___/".green();
-    let mintln3 = "/".green();
+    let mintln1: ColoredString = "/ M ,".green();
+    let mintln2: ColoredString = "\\___/".green();
+    let mintln3: ColoredString = "/".green();
 
     if os == "" {
         exit();
